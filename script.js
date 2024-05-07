@@ -1,6 +1,9 @@
 const teamMembers = [
     {
         name: 'Lionel Messi',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        activelyPlaying: true,
         position: 'Forward',
         skills: ['Dribbling', ' Shooting', ' Passing'],
         strengths: 'Ball Control',
@@ -9,6 +12,8 @@ const teamMembers = [
     },
     {
         name: 'Lionel Messi Jr.',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
         position: 'Midfielder',
         skills: ['Dribbling', 'Shooting', 'Passing'],
         strengths: 'Ball Control',
@@ -26,16 +31,25 @@ function generateTeamCards() {
 
 // styling card based on position
 
-        // let backgroundColor = 
+        let backgroundColor
+
+        if(member.position === 'Forward') {
+            backgroundColor = 'red'
+        }else if (member.position === 'Midfielder') {
+            backgroundColor = 'blue'
+        }
+
+        card.style.backgroundColor = backgroundColor
 
 // create a list of skills with <li> tags
 
 const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
-
         card.innerHTML = `
-            <div class = "card">
-                <div class = "card-header"> ${member.name}</div>
+            <div class = "card h-100">
+                <div class = "card-header text-center"> ${member.name}</div>
                 <div class = "card-body">
+                    <img class="img-fluid" src="${member.img}">
+                    <p><strong>Age:</strong> ${member.age}</p>
                     <p><strong>Position:</strong> ${member.position}</p>
                     <p><strong>Skills:</strong> 
                         <ul>
