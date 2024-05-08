@@ -1,20 +1,49 @@
 const teamMembers = [
     {
-        name: 'Lionel Messi',
+        name: 'David Pastranak',
         img: '/imgs/black-ranger.webp',
         age: 36,
-        activelyPlaying: true,
-        position: 'Forward',
+        position: 'Winger',
         skills: ['Dribbling', ' Shooting', ' Passing'],
         strengths: 'Ball Control',
         weaknesses: 'Heading Ability',
         biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
     },
     {
-        name: 'Lionel Messi Jr.',
+        name: 'Connor McDavid',
+        img: '/imgs/black-ranger.webp',
+        age: 27,
+        position: 'Center',
+        skills: ['Speed', 'Stick Handling', 'Passing'],
+        strengths: 'Speed',
+        weaknesses: 'Defense',
+        biography: 'Connor Andrew McDavid is a Canadian professional ice hockey centre and captain of the Edmonton Oilers of the National Hockey League. The Oilers selected him first overall in the 2015 NHL Entry Draft. McDavid currently wears #97 for the Edmonton Oilers.'
+    },
+    {
+        name: 'Nikita Kucherov',
         img: '/imgs/black-ranger.webp',
         age: 36,
-        position: 'Midfielder',
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Cale Makar',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Defensman',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Quinn Hughes',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Defensman',
         skills: ['Dribbling', 'Shooting', 'Passing'],
         strengths: 'Ball Control',
         weaknesses: 'Heading Ability',
@@ -33,10 +62,12 @@ function generateTeamCards() {
 
         let backgroundColor
 
-        if(member.position === 'Forward') {
+        if(member.position === 'Center') {
             backgroundColor = 'red'
-        }else if (member.position === 'Midfielder') {
+        }else if (member.position === 'Winger') {
             backgroundColor = 'blue'
+        }else if (member.position === 'Defensman') {
+            backgroundColor = 'yellow'
         }
 
         card.style.backgroundColor = backgroundColor
@@ -59,6 +90,8 @@ const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
                     <p><strong>Strengths:</strong> ${member.strengths}</p>
                     <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
                     <p><strong>Biography:</strong> ${member.biography}</p>
+                </div>
+            </div>
         `
         teamCardsContainer.appendChild(card)
     })
