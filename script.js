@@ -1,6 +1,6 @@
 const teamMembers = [
     {
-        name: 'David Pastranak',
+        name: 'Chris Kreider',
         img: '/imgs/black-ranger.webp',
         age: 36,
         position: 'Winger',
@@ -10,7 +10,7 @@ const teamMembers = [
         biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
     },
     {
-        name: 'Connor McDavid',
+        name: 'Mika Zibanejad',
         img: '/imgs/black-ranger.webp',
         age: 27,
         position: 'Center',
@@ -20,7 +20,97 @@ const teamMembers = [
         biography: 'Connor Andrew McDavid is a Canadian professional ice hockey centre and captain of the Edmonton Oilers of the National Hockey League. The Oilers selected him first overall in the 2015 NHL Entry Draft. McDavid currently wears #97 for the Edmonton Oilers.'
     },
     {
-        name: 'Nikita Kucherov',
+        name: 'Jack Roslovic',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Artemi Panarin',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Vincent Trocheck',
+        img: '/imgs/black-ranger.webp',
+        age: 27,
+        position: 'Center',
+        skills: ['Speed', 'Stick Handling', 'Passing'],
+        strengths: 'Speed',
+        weaknesses: 'Defense',
+        biography: 'Connor Andrew McDavid is a Canadian professional ice hockey centre and captain of the Edmonton Oilers of the National Hockey League. The Oilers selected him first overall in the 2015 NHL Entry Draft. McDavid currently wears #97 for the Edmonton Oilers.'
+    },
+    {
+        name: 'Alexis Lafreniére',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Filip Chytil',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Alex Wennberg',
+        img: '/imgs/black-ranger.webp',
+        age: 27,
+        position: 'Center',
+        skills: ['Speed', 'Stick Handling', 'Passing'],
+        strengths: 'Speed',
+        weaknesses: 'Defense',
+        biography: 'Connor Andrew McDavid is a Canadian professional ice hockey centre and captain of the Edmonton Oilers of the National Hockey League. The Oilers selected him first overall in the 2015 NHL Entry Draft. McDavid currently wears #97 for the Edmonton Oilers.'
+    },
+    {
+        name: 'Kaapo Kakko',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Will Cuylle',
+        img: '/imgs/black-ranger.webp',
+        age: 36,
+        position: 'Winger',
+        skills: ['Dribbling', ' Shooting', ' Passing'],
+        strengths: 'Ball Control',
+        weaknesses: 'Heading Ability',
+        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+    },
+    {
+        name: 'Barclay Goodrow',
+        img: '/imgs/black-ranger.webp',
+        age: 27,
+        position: 'Center',
+        skills: ['Speed', 'Stick Handling', 'Passing'],
+        strengths: 'Speed',
+        weaknesses: 'Defense',
+        biography: 'Connor Andrew McDavid is a Canadian professional ice hockey centre and captain of the Edmonton Oilers of the National Hockey League. The Oilers selected him first overall in the 2015 NHL Entry Draft. McDavid currently wears #97 for the Edmonton Oilers.'
+    },
+    {
+        name: 'Jimmy Vesey',
         img: '/imgs/black-ranger.webp',
         age: 36,
         position: 'Winger',
