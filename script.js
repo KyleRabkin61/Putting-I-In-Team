@@ -1,17 +1,17 @@
 const teamMembers = [
     {
-        name: 'Panarin',
-        img: '/imgs/black-ranger.webp',
+        name: 'Artemi Panarin',
+        img: '/imgs/apanarin.webp',
         age: 36,
         position: 'Winger',
-        skills: ['Dribbling', ' Shooting', ' Passing'],
-        strengths: 'Ball Control',
-        weaknesses: 'Heading Ability',
-        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+        skills: ['Stick Handling', ' Shooting', ' Passing'],
+        strengths: 'Hockey IQ',
+        weaknesses: 'Size',
+        biography: 'Artemi Sergeyevich Panarin, nicknamed the "Breadman", or simply "Bread", is a Russian professional ice hockey winger and alternate captain for the New York Rangers of the National Hockey League.'
     },
     {
         name: 'Connor McDavid',
-        img: '/imgs/black-ranger.webp',
+        img: '/imgs/cmcdavid.jpg',
         age: 27,
         position: 'Center',
         skills: ['Speed', 'Stick Handling', 'Passing'],
@@ -21,17 +21,17 @@ const teamMembers = [
     },
     {
         name: 'Rick Nash',
-        img: '/imgs/black-ranger.webp',
+        img: '/imgs/rnash.jpg',
         age: 36,
         position: 'Winger',
         skills: ['Dribbling', ' Shooting', ' Passing'],
         strengths: 'Ball Control',
         weaknesses: 'Heading Ability',
-        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+        biography: 'Richard Nash is a Canadian former professional ice hockey player who serves as the director of player development for the Columbus Blue Jackets of the National Hockey League.'
     },
     {
         name: 'Cale Makar',
-        img: '/imgs/black-ranger.webp',
+        img: '/imgs/cmakar.jpg',
         age: 36,
         position: 'Defenseman',
         skills: ['Dribbling', ' Shooting', ' Passing'],
@@ -41,7 +41,7 @@ const teamMembers = [
     },
     {
         name: 'Quinn Hughes',
-        img: '/imgs/black-ranger.webp',
+        img: '/imgs/qhughes.jpg',
         age: 27,
         position: 'Defenseman',
         skills: ['Speed', 'Stick Handling', 'Passing'],
@@ -51,7 +51,7 @@ const teamMembers = [
     },
     {
         name: 'Wayne Gretzky',
-        img: '/imgs/black-ranger.webp',
+        img: '/imgs/wgretzky.jpg',
         age: 36,
         position: 'Winger',
         skills: ['Dribbling', ' Shooting', ' Passing'],
@@ -116,7 +116,7 @@ function generateTeamCards() {
     
     teamMembers.forEach(member => {
         const card = document.createElement('div')
-        card.classList.add('col-md-4')
+        card.classList.add('col-lg-4','col-md-6','p-2')
 
 // styling card based on position
 
@@ -141,7 +141,9 @@ const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
             <div class = "card h-100">
                 <div class = "card-header text-center"> ${member.name}</div>
                 <div class = "card-body">
+                    <div class = "text-center">
                     <img class="img-fluid" src="${member.img}">
+                    </div>
                     <p><strong>Age:</strong> ${member.age}</p>
                     <p><strong>Position:</strong> ${member.position}</p>
                     <p><strong>Skills:</strong> 
