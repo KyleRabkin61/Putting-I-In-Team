@@ -104,21 +104,21 @@ const teamMembers = [
         age: 56,
         active: false,
         position: 'Defenseman',
-        skills: ['Dribbling', ' Shooting', ' Passing'],
-        strengths: 'Ball Control',
-        weaknesses: 'Heading Ability',
+        skills: ['Passing', 'Puck Control', ' Skating'],
+        strengths: 'Agility',
+        weaknesses: 'Shooting',
         biography: 'Brian Joseph Leetch is an American former professional ice hockey defenseman who played 18 National Hockey League seasons with the New York Rangers, Toronto Maple Leafs, and Boston Bruins. He has been called one of the top defensemen in NHL history. Leetch accumulated many individual honors during his 18-year career.'
     },
     {
         name: 'Igor Shesterkin',
-        img: '/imgs/black-ranger.webp',
-        age: 36,
+        img: '/imgs/ishesterkin.jpg',
+        age: 28,
         active: true,
         position: 'Goalie',
-        skills: ['Dribbling', 'Shooting', 'Passing'],
-        strengths: 'Ball Control',
-        weaknesses: 'Heading Ability',
-        biography: 'Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. '
+        skills: ['Agility', 'Reaction Speed', 'Hockey IQ'],
+        strengths: 'Glove',
+        weaknesses: 'Playing The Puck',
+        biography: 'Igor Olegovich Shestyorkin is a Russian professional ice hockey goaltender for the New York Rangers of the National Hockey League. He was selected by the Rangers in the fourth round, 118th overall, of the 2014 NHL Entry Draft.'
     }
 ]
 
@@ -127,7 +127,7 @@ function generateTeamCards() {
     
     teamMembers.forEach(member => {
         const card = document.createElement('div')
-        card.classList.add('col-lg-4','col-md-6','p-2')
+        card.classList.add('col-xl-3','col-md-5', 'col-12','p-2', 'card-p','m-1')
 
 // styling card based on position
 
@@ -163,7 +163,7 @@ const skillsList = member.skills.map(skill => `<li> ${skill} </li>`).join('')
                 <div class = "card-header text-center"> ${member.name}</div>
                 <div class = "card-body">
                     <div class = "text-center">
-                    <img class="img-fluid" src="${member.img}">
+                    <img class="img-fluid img" src="${member.img}">
                     </div>
                     <p><strong>Age:</strong> ${member.age}</p>
                     <p><strong>Active:</strong> ${string}</p>

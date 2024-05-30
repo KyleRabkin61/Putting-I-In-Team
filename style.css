@@ -1,6 +1,13 @@
 body {
     background: black;
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .title {
     color: white;
+}
+.img {
+    height:25vw;
+    min-height:300px;
 }
